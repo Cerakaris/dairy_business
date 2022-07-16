@@ -27,17 +27,18 @@
             <h2> Dairy farm produce </h2>
         </div>
         <div>
+            <div id="shedsList"></div>
             <table>
                 <tr>
                     <td>Enter the Shed Name</td>
-                    <td><input type="text" id="inputtext" /></td>
+                    <td><input type="text" id="shedNameInput" /></td>
                     <td>Enter the Number of Litres  produced from the shed </td>
-                    <td><input type="text" id="inputnumber2" />Litres</td>
+                    <td><input type="number" id="shedProduceInput" />Litres</td>
                 </tr>
                 <tr>
                     <td></td>
                     <td><button type="button" id="add" onclick="addRecord()">Add </button>
-                    <button type="button" id="display" onclick="displayRecord();">Display</button> 
+                    <!-- <button type="button" id="display" onclick="displayRecord();">Display</button>  -->
                     </td>
                     <td></td>
                     <td></td>
@@ -50,8 +51,9 @@
         </div>
         <div>
             <h3>Total milk (in Litres) produced from all sheds</h3>
-            <button type="button" id="display2" onclick="displayRecord2();">Display</button>
+            <button type="button" id="display2" onclick="totalProduce();">Display</button>
         </div>
+        <div id="totalProduceDisplay"></div>
         <div>
             <div>
                 <tr>
@@ -67,12 +69,23 @@
             </div>
             <div>
                 <h3>Income for every month </h3>
-                <button type="button" id="display3" onclick="displayRecord3();">Display</button>
+                <button type="button" id="display3" onclick="monthlytotal();">Display</button>
             </div>
+            <div id="mothly-produce"></div>
             <div>
                 <h3>Income in a year </h3>
-                <button type="button" id="display3" onclick="displayRecord3();">Display</button>
+                <button type="button" id="display3" onclick="yearlyProduce();">Display</button>
             </div>
+            <div id="yearly-produce"></div>
+        </div>
+        <div>
+            <footer>
+                <div>
+                    <h1> Carpathian Mountains Dairy Farm</h1>
+                    <p> </p>
+                    <h2>All rights and copyrights are reserved </h2>
+                </div>
+            </footer>
         </div>
    </div>
 
@@ -82,80 +95,3 @@
 </body>
 </html>
 
-
- <!-- <form action="/action_page.php">
-        <label for="sheds">Choose a shed:</label>
-        <select id="sheds" name="sheds">
-        <option value="Shed A">Shed A</option>
-        <option value="Shed B">Shed B</option>
-        <option value="Shed C">Shed C</option>
-        <option value="Shed D">Shed D</option>
-        </select>
-        <input type="number" id="number_of_litres" name="number_of_litres">
-        <input type="submit">
-    </form> -->
-
-    <!-- <!DOCTYPE html>
-<html lang="en" dir="ltr">
-   
-<head>
-    <meta charset="utf-8">
-    <title>
-        How to take array input using JavaScript 
-    </title>
-</head>
-   
-<body style="text-align: center;">
-<form>
-   <h1>Please enter data</h1>
-   <br>
-      <label for="Name">Name</label> 
-       <input id="name" type="text">
-     <br> 
-    
-   <br>
-     <label for="Age">Age</label>
-   <input id="age" type="text">
-   <br>
-   <br>   
-    <label for="city">City</label>
-   <input id="City" type="text">
-   <br>
-    
-   <br>
-  <input type="button" value="Save" onclick="savedata()">
-   <input type="button" value="Show data" onclick="displayData()">
-   <br>
-</form>
-<div id="display"></div>
- 
-<script type="text/javascript">
-var arrCitys=new Array();
-var arrNames=new Array();
-var arrAges=new Array();
- 
-function savedata(){
-    var name = document.getElementById('name').value;
-    var city = document.getElementById('City').value;
-    var age = document.getElementById('age').value;
-    arrCitys[arrCitys.length]=city;    
-    arrNames[arrNames.length]=name;
-    arrAges[arrAges.length]=age;
-  }
-   
- 
-function displayData() 
-{
-  var content="<b>Data Entered by User :</b><br>";
-  content+= [...arrNames]+"</br>";
-  content+=[...arrCitys]+"</br>";
-  content+=[...arrAges]+"</br>";
- 
-  document.getElementById('display').innerHTML = content;
-}
- 
- 
-</script>
- 
-</body>
-</html> -->
