@@ -1,6 +1,6 @@
 
 // let shedName, shedProduce, sheds, shedsList, dailyShedProduce, totalProduceDisplay, totalDailyProduce, sellingPrice,weeklyIncomeDisplay, weeklyIncome, monthlyProduceDisplay, monthlyIncomeDisplay, yearlyIncomeDisplay ;
-let shedName, shedProduce, sheds, shedsList;
+let shedName, shedProduce, sheds, shedsList, dailyShedProduce;
 
 // let months = [
 // 	{name:'January',days: 31},
@@ -20,7 +20,7 @@ let shedName, shedProduce, sheds, shedsList;
 shedName = document.getElementById("shedNameInput");
 shedProduce = document.getElementById("shedProduceInput");
 shedsList = document.getElementById("shedsList");
-// dailyShedProduce = document.getElementById("dailyShedProduce");
+dailyShedProduce = document.getElementById("dailyShedProduce");
 // totalProduceDisplay = document.getElementById("totalProduceDisplay");
 // yearlyIncomeDisplay = document.getElementById("yearlyIncomeDisplay");
 // monthlyIncomeDisplay = document.getElementById("monthlyIncomeDisplay");
@@ -45,14 +45,14 @@ function addRecord() {
         shedProduce.value = "";	
 };
 
-// function stringifyShedProduce(){
-// 	let looped = '';
-//     dailyProduce = '';
-// 	for (let i = 0; i < sheds.length; i++) {
-//         looped += `<div> <p> Your production in ${sheds[i].name} is ${sheds[i].produce} Litres per day. </p></div>`
-// 	};
-// 	return looped;
-// };
+function stringifyShedProduce(){
+	let looped = '';
+    dailyProduce = '';
+	for (let i = 0; i < sheds.length; i++) {
+        looped += `<div> <p> Your production in ${sheds[i].name} is ${sheds[i].produce} Litres per day. </p></div>`
+	};
+	return looped;
+};
 
 function dailyProducePerShed() {
     // sheds.push({name: shedName.value, produce: shedProduce.value});
