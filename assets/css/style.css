@@ -1,0 +1,122 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    background-image: url("images/cattle2.jpeg") ;
+    background-size: cover;
+    width: 90%;
+    margin : auto;
+}
+
+/* .navigation{
+    color: white; 
+    padding: 2em 0 4em 0;
+    display: block;
+    text-align: center;
+    font-weight: 900;
+    background-image: url("images/dairycattle.jpg") ;
+    background-size: cover; 
+}
+.title:hover{
+    transform: scale(1.5);
+     transition: all 0.3s ease-in-out 0.2s;
+}
+ul{
+    list-style: none;   
+}
+.menu{
+    padding: 0;
+}
+.navigation li{
+    background-color: blue;
+    display: inline;
+    padding: 0.5em 5em 0.5em 4em;
+} 
+a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1em;
+    color: white;
+    
+}
+.navigation a:hover{
+    color:rgb(0, 255, 221)
+
+}
+.production, #selling-price{
+    display: flex;
+     text-align: left;
+    justify-content: space-between;
+    padding-left: 3em;
+    padding-right: 15%;
+    padding-top: 0.5em;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 2em;
+
+;
+   
+}
+ h2{
+    font-size: 2em;
+    border-bottom: 0.2em solid black;
+    padding-bottom: 0;
+    padding-left: 1em;
+    
+} 
+input{
+    padding: 0.3em;
+    font-weight: 600;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif; 
+    border: 0.15em solid black;
+    
+}
+button{
+    background-color: blue;
+    border: none;
+    padding: 0.7em 2em;
+    color: #fafafa;
+    font-weight: 900;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
+ #shedsList, #dailyShedProduce{
+   padding-left: 5em;
+   padding-right: 0.5em;
+    font-family: 'EB Garamond', sans-serif;  
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color:rgb(238, 237, 238);
+    color: blue;
+    width: 50%
+} 
+#totalProduceDisplay, #weeklyIncome,
+#monthlyIncomeDisplay, #yearlyIncomeDisplay{
+   padding-left: 5em;
+   padding-top: 1em;
+    font-family: 'EB Garamond', sans-serif;  
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color:rgb(238, 237, 238);
+    color: blue;
+    width: 50%
+} 
+.dairy-farm{
+    background-color: #fafafa;
+    padding: 1.5em 0; 
+   box-shadow: inset 5px 3px 5px #888888;
+    
+}
+.footer{
+     /* background-color: rgb(118, 191, 240); */
+    color: white; 
+    padding: 2em 0 2em 0;
+    font-weight: 900;
+    text-align: center;
+   
+} */
+
+
+
+
+
