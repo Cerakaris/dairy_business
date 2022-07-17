@@ -4,98 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dairy Farm </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter&family=Montserrat&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+    <title>Carpathian Mountains Dairy Farm </title>
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
 </head>
 <body>
-   <div> 
-        <menu>
-            <div>
-                <h1> CARPATHIAN MOUNTAINS DAIRY FARM </h1>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="staff">Staff</a></li>
-                    <li><a href="resources">Resources</a></li>
-                    <li><a href="location">Location</a></li>
-                </ul>
-            </div>
-        </menu>
+   <div class="navigation"> 
+        <div>
+            <h1 class="title"> CARPATHIAN MOUNTAINS DAIRY FARM </h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="staff">Staff</a></li>
+                <li><a href="resources">Resources</a></li>
+                <li><a href="location">Location</a></li>
+            </ul>
+        </div>
    </div>
-   <div>
-        <div>
-            <h2> Dairy farm produce </h2>
-        </div>
-        <div>
+   <div class="dairy-farm">
+        <div class="dairy-farm-produce">
+            <div>
+                <h2> Milk Production  </h2>
+            </div>
+            <div class="production">
+                <div>
+                    <p>Enter the Shed Name: <input type="text" id="shedNameInput" /></p>
+                    <p>Enter the Number of Litres  produced from the shed: <input type="number" id="shedProduceInput" /> (Litres)</p>
+                    <button type="button" id="add" onclick="addRecord()">Add </button>
+                </div>
+                <div id="shedsList"></div>
+            </div>
             
-            <table>
-                <tr>
-                    <td>Enter the Shed Name</td>
-                    <td><input type="text" id="shedNameInput" /></td>
-                    <td>Enter the Number of Litres  produced from the shed </td>
-                    <td><input type="number" id="shedProduceInput" />Litres</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><button type="button" id="add" onclick="addRecord()">Add </button>
-                    <!-- <button type="button" id="display" onclick="displayRecord();">Display</button>  -->
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-        <div id="shedsList"></div>
-        <div>
-            <h3>Milk (in Litres) produced per shed </h3>
-            <button type="button" id="displayDailyShedProduction" onclick="dailyProducePerShed()">Display</button>
-        </div>
-        <div id="dailyShedProduce"></div>
-        <div>
-            <h3>Total milk (in Litres) produced from all sheds</h3>
-            <button type="button" id="displayTotalDailyProduction" onclick="totalProduce();">Display</button>
-        </div>
-        <div id="totalProduceDisplay"></div>
-        <div>
             <div>
-                <tr>
-                    <td>Selling price of milk per Litre </td>
-                    <td><input type="number" id="sellingPrice" />Ksh.</td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                <div class="production" >
+                    <div>
+                        <h3>Milk (in Litres) produced per shed </h3>
+                        <button type="button" id="displayDailyShedProduction" onclick="dailyProducePerShed()">Display</button>
+                    </div>
+                    <div id="dailyShedProduce"></div>
+                </div>
+                <div class="production">
+                    <div>
+                        <h3>Total milk (in Litres) produced from all sheds</h3>
+                        <button type="button" id="displayTotalDailyProduction" onclick="totalProduce();">Display</button>
+                    </div>
+                    <div id="totalProduceDisplay"></div>
+                </div>
             </div>
-            <div>
-                <h3>Income in a week </h3>
-                <button type="button" id="displayWeeklyIncome" onclick="totalWeeklyIncome()">Display</button>
-            </div>
-            <div id="weeklyIncome"></div>
 
             <div>
-                <h3>Income for every month </h3>
-                <button type="button" id="displayMonthlyIncome" onclick="monthlyIncome()">Display</button>
-            </div>
-            <div id="monthlyIncomeDisplay"></div>
-            <div>
-                <h3>Income in a year </h3>
-                <button type="button" id="displayYearlyIncome" onclick="yearlyIncome() ">Display</button>
-            </div>
-            <div id="yearlyIncomeDisplay"></div>
-        </div>
-        <div>
-            <footer>
                 <div>
-                    <h1> Carpathian Mountains Dairy Farm</h1>
-                    <p> </p>
-                    <h2>All rights and copyrights are reserved </h2>
+                    <h2> Income from Dairy Farm  </h2> 
                 </div>
-            </footer>
+                <div id="selling-price">
+                    <p>Selling price of milk per Litre <input type="number" id="sellingPrice" />Ksh.</p>
+                </div>
+                <div class="production">
+                    <div>
+                        <h3>Income in a week </h3>
+                        <button type="button" id="displayWeeklyIncome" onclick="totalWeeklyIncome()">Display</button>
+                    </div>
+                    <div id="weeklyIncome"></div>
+                </div>
+                <div class="production">
+                    <div>
+                    <h3>Income for every month </h3>
+                    <button type="button" id="displayMonthlyIncome" onclick="monthlyIncome()">Display</button>
+                </div>
+                <div id="monthlyIncomeDisplay"></div>
+                </div>
+                <div class="production">
+                    <div>
+                        <h3>Income in a year </h3>
+                        <button type="button" id="displayYearlyIncome" onclick="yearlyIncome() ">Display</button>
+                    </div>
+                    <div id="yearlyIncomeDisplay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <h1> Carpathian Mountains Dairy Farm</h1>
+                <p> </p>
+                <h2>All rights and copyrights are reserved </h2>
+            </div>
         </div>
    </div>
 
 
        
-   <script src="index.js"></script>
+   <script src="assets/index.js"></script>
 </body>
 </html>
 
