@@ -23,9 +23,11 @@ shedsList = document.getElementById("shedsList");
 dailyShedProduce = document.getElementById("dailyShedProduce");
 totalProduceDisplay = document.getElementById("totalProduceDisplay");
 weeklyIncomeDisplay = document.getElementById("weeklyIncome");
+sellingPrice = document.getElementById("sellingPrice");
+monthlyIncomeDisplay = document.getElementById("monthlyIncomeDisplay");
+
 // yearlyIncomeDisplay = document.getElementById("yearlyIncomeDisplay");
-// monthlyIncomeDisplay = document.getElementById("monthlyIncomeDisplay");
-// sellingPrice = document.getElementById("sellingPrice");
+
 
 
 sheds = [];
@@ -82,19 +84,19 @@ function totalWeeklyIncome(){
 };
 
 
-// function monthlyIncome() {
-// 	let monthlyProduce = months.slice();
-// 	let monthlyIncomeHtml = '';
+function monthlyIncome() {
+	let monthlyProduce = months.slice();
+	let monthlyIncomeHtml = '';
     
-// 	for (let i = 0; i < monthlyProduce.length; i++) {
-// 		monthlyProduce[i].produce = monthlyProduce[i].days * Number(totalDailyProduce) ;
-//         monthlyProduce[i].income = monthlyProduce[i].days * Number(totalDailyProduce)*Number(sellingPrice.value); ;
-// 	};
-// 	for (let i = 0; i < monthlyProduce.length; i++) {
-//         monthlyIncomeHtml += `<div> Your income for ${monthlyProduce[i].name} is Ksh. ${monthlyProduce[i].income}</div>`
-// 	};
-// 	monthlyIncomeDisplay.innerHTML = monthlyIncomeHtml;
-// };
+	for (let i = 0; i < monthlyProduce.length; i++) {
+		monthlyProduce[i].produce = monthlyProduce[i].days * Number(totalDailyProduce) ;
+        monthlyProduce[i].income = monthlyProduce[i].days * Number(totalDailyProduce)*Number(sellingPrice.value); ;
+	};
+	for (let i = 0; i < monthlyProduce.length; i++) {
+        monthlyIncomeHtml += `<div> Your income for ${monthlyProduce[i].name} is Ksh. ${monthlyProduce[i].income}</div>`
+	};
+	monthlyIncomeDisplay.innerHTML = monthlyIncomeHtml;
+};
 
 
 // function yearlyIncome() {
