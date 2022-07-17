@@ -7,7 +7,7 @@ body{
     margin : auto;
 }
 
-/* .navigation{
+.navigation{
     color: white; 
     padding: 2em 0 4em 0;
     display: block;
@@ -42,7 +42,7 @@ a{
     color:rgb(0, 255, 221)
 
 }
-.production, #selling-price{
+/* .production, #selling-price{
     display: flex;
      text-align: left;
     justify-content: space-between;
