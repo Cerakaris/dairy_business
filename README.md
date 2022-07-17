@@ -21,7 +21,7 @@ This is a dairy farm website where the user can input the daily milk produce and
 * website link
 
 # Link
-Here is the link to the website ()
+Here is the link to the website (jacklinekariuki.github.io/dairy_business/)
 
 # Technology Used
 * HTML -To build the page contents.
@@ -53,7 +53,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 # Author's Info
-Written by Jackline W. Kariuki
+Email - <jwaithira71@gmail.com>
 
+
+[Go Back to the Top](#dairy_business)
 
 
