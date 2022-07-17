@@ -1,6 +1,5 @@
 
-// let shedName, shedProduce, sheds, shedsList, dailyShedProduce, totalProduceDisplay, totalDailyProduce, sellingPrice,weeklyIncomeDisplay, weeklyIncome, monthlyProduceDisplay, monthlyIncomeDisplay, yearlyIncomeDisplay ;
-let shedName, shedProduce, sheds, shedsList, dailyShedProduce, totalProduceDisplay, totalDailyProduce, sellingPrice,weeklyIncomeDisplay, weeklyIncome, monthlyProduceDisplay, monthlyIncomeDisplay;
+let shedName, shedProduce, sheds, shedsList, dailyShedProduce, totalProduceDisplay, totalDailyProduce, sellingPrice,weeklyIncomeDisplay, weeklyIncome, monthlyProduceDisplay, monthlyIncomeDisplay, yearlyIncomeDisplay ;
 
 let months = [
 	{name:'January',days: 31},
@@ -26,7 +25,7 @@ weeklyIncomeDisplay = document.getElementById("weeklyIncome");
 sellingPrice = document.getElementById("sellingPrice");
 monthlyIncomeDisplay = document.getElementById("monthlyIncomeDisplay");
 
-// yearlyIncomeDisplay = document.getElementById("yearlyIncomeDisplay");
+yearlyIncomeDisplay = document.getElementById("yearlyIncomeDisplay");
 
 
 
@@ -99,10 +98,10 @@ function monthlyIncome() {
 };
 
 
-// function yearlyIncome() {
-// 	let totalYearly = 0 ;
-// 	for (let i = 0; i < months.length; i++) {
-// 		totalYearly += months[i].days * Number(totalDailyProduce)*Number(sellingPrice.value);
-// 	};
-// 	yearlyIncomeDisplay.innerHTML = `Your yearly produce = ${totalYearly}`;
-// };
+function yearlyIncome() {
+	let totalYearly = 0 ;
+	for (let i = 0; i < months.length; i++) {
+		totalYearly += months[i].days * Number(totalDailyProduce)*Number(sellingPrice.value);
+	};
+	yearlyIncomeDisplay.innerHTML = `Your yearly produce = ${totalYearly}`;
+};
