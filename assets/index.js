@@ -24,7 +24,6 @@ totalProduceDisplay = document.getElementById("totalProduceDisplay");
 weeklyIncomeDisplay = document.getElementById("weeklyIncome");
 sellingPrice = document.getElementById("sellingPrice");
 monthlyIncomeDisplay = document.getElementById("monthlyIncomeDisplay");
-
 yearlyIncomeDisplay = document.getElementById("yearlyIncomeDisplay");
 
 
@@ -35,7 +34,7 @@ function stringifySheds(){
 	let looped = '';
     dailyProduce = '';
 	for (let i = 0; i < sheds.length; i++) {
-		 looped += `<div> <p>Shed name : ${sheds[i].name} ,  Milk in Litres : ${sheds[i].produce}</p></div>`
+		 looped += `<div> <p>Shed name : ${sheds[i].name}  ,   Milk in Litres : ${sheds[i].produce}</p></div>`
 	};
 	return looped;
 };
