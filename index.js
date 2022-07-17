@@ -1,6 +1,6 @@
 
 // let shedName, shedProduce, sheds, shedsList, dailyShedProduce, totalProduceDisplay, totalDailyProduce, sellingPrice,weeklyIncomeDisplay, weeklyIncome, monthlyProduceDisplay, monthlyIncomeDisplay, yearlyIncomeDisplay ;
-let shedName, shedProduce, sheds, shedsList, dailyShedProduce, totalProduceDisplay, totalDailyProduce;
+let shedName, shedProduce, sheds, shedsList, dailyShedProduce, totalProduceDisplay, totalDailyProduce, sellingPrice,weeklyIncomeDisplay;
 
 // let months = [
 // 	{name:'January',days: 31},
@@ -22,10 +22,11 @@ shedProduce = document.getElementById("shedProduceInput");
 shedsList = document.getElementById("shedsList");
 dailyShedProduce = document.getElementById("dailyShedProduce");
 totalProduceDisplay = document.getElementById("totalProduceDisplay");
+weeklyIncomeDisplay = document.getElementById("weeklyIncome");
 // yearlyIncomeDisplay = document.getElementById("yearlyIncomeDisplay");
 // monthlyIncomeDisplay = document.getElementById("monthlyIncomeDisplay");
 // sellingPrice = document.getElementById("sellingPrice");
-// weeklyIncomeDisplay = document.getElementById("weeklyIncome");
+
 
 sheds = [];
 
@@ -74,11 +75,11 @@ function totalProduce(){
 	totalProduceDisplay.innerHTML = `The total production is ${totalDailyProduce} litres per day`;
 };
 
-// function totalWeeklyIncome(){
+function totalWeeklyIncome(){
 	
-// 	weeklyIncome = getTotalDailyProduce() * Number(sellingPrice.value) * 7;
-// 	weeklyIncomeDisplay.innerHTML = `Your weekly income will be Ksh. ${weeklyIncome}`;
-// };
+	weeklyIncome = getTotalDailyProduce() * Number(sellingPrice.value) * 7;
+	weeklyIncomeDisplay.innerHTML = `Your weekly income will be Ksh. ${weeklyIncome}`;
+};
 
 
 // function monthlyIncome() {
