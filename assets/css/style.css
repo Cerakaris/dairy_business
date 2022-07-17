@@ -15,6 +15,7 @@ body{
     font-weight: 900;
     background-image: url("images/dairycattle.jpg") ;
     background-size: cover; 
+    height : auto;
 }
 .title:hover{
     transform: scale(1.5);
@@ -29,7 +30,9 @@ ul{
 .navigation li{
     background-color: blue;
     display: inline;
-    padding: 0.5em 5em 0.5em 4em;
+    padding: 0.5em 5em 0.5em 5em;
+    margin: 0.5em;
+    
 } 
 a{
     text-decoration: none;
@@ -51,10 +54,7 @@ a{
     padding-top: 0.5em;
     font-weight: 600;
     font-size: 1em;
-    margin-bottom: 2em;
-
-;
-   
+    margin-bottom: 2em;  
 }
  h2{
     font-size: 2em;
@@ -104,16 +104,30 @@ button{
 .dairy-farm{
     background-color: #fafafa;
     padding: 1.5em 0; 
-   box-shadow: inset 5px 3px 5px #888888;
+   box-shadow: inset 1px 3px 6px #888888;
     
 }
 .footer{
-     /* background-color: rgb(118, 191, 240); */
     color: white; 
     padding: 2em 0 2em 0;
     font-weight: 900;
+    text-align: center; 
+    float : none;
+}
+img{
+    float: left;
+    clear: right;
+}
+#copyright{
+    display: block;
     text-align: center;
-   
+}
+
+@media only screen and (max-width: 480px) {
+.navigation, .production, #selling-price, li{
+    display: block;
+    text-align: left;
+}   
 }
 
 
