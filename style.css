@@ -1,0 +1,44 @@
+body{
+    margin: auto;
+    font-family: 'EB Garamond', sans-serif;
+}
+
+.navigation{
+    background-color: rgb(118, 191, 240);
+    color: white; 
+    padding: 2em 0 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+     
+}
+ul{
+    list-style: none;   
+}
+.menu{
+    padding: 0;
+}
+.navigation li{
+    background-color: blue;
+    display: inline;
+    padding: 0 5em 0 4em;
+} 
+a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1em;
+    color: white;
+}
+.navigation a:hover{
+    color: rgb(118, 191, 240);
+}
+.dairy-farm{
+   display: block;
+   text-align: center;
+    padding: 0 ;
+}
+/* #dairy-farm-produce{
+    text-align: left;
+} */
+
