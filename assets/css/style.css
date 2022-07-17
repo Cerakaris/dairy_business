@@ -42,7 +42,7 @@ a{
     color:rgb(0, 255, 221)
 
 }
-/* .production, #selling-price{
+.production, #selling-price{
     display: flex;
      text-align: left;
     justify-content: space-between;
@@ -68,7 +68,7 @@ input{
     font-weight: 600;
     font-size: 1em;
     font-family: 'Raleway', sans-serif; 
-    border: 0.15em solid black;
+    border: 0.1em solid black;
     
 }
 button{
@@ -107,7 +107,7 @@ button{
    box-shadow: inset 5px 3px 5px #888888;
     
 }
-.footer{
+/* .footer{
      /* background-color: rgb(118, 191, 240); */
     color: white; 
     padding: 2em 0 2em 0;
