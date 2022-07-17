@@ -27,7 +27,7 @@
             <h2> Dairy farm produce </h2>
         </div>
         <div>
-            <div id="shedsList"></div>
+            
             <table>
                 <tr>
                     <td>Enter the Shed Name</td>
@@ -45,38 +45,42 @@
                 </tr>
             </table>
         </div>
+        <div id="shedsList"></div>
         <div>
             <h3>Milk (in Litres) produced per shed </h3>
-            <button type="button" id="display" onclick="displayRecord();">Display</button>
+            <button type="button" id="displayDailyShedProduction" onclick="dailyProducePerShed()">Display</button>
         </div>
+        <div id="dailyShedProduce"></div>
         <div>
             <h3>Total milk (in Litres) produced from all sheds</h3>
-            <button type="button" id="display2" onclick="totalProduce();">Display</button>
+            <button type="button" id="displayTotalDailyProduction" onclick="totalProduce();">Display</button>
         </div>
         <div id="totalProduceDisplay"></div>
         <div>
             <div>
                 <tr>
                     <td>Selling price of milk per Litre </td>
-                    <td><input type="number" id="inputnumber3" />Ksh.</td>
-                    <td> </td>
+                    <td><input type="number" id="sellingPrice" />Ksh.</td>
+                    <td></td>
                     <td></td>
                 </tr>
             </div>
             <div>
                 <h3>Income in a week </h3>
-                <button type="button" id="display3" onclick="displayRecord3();">Display</button>
+                <button type="button" id="displayWeeklyIncome" onclick="totalWeeklyIncome()">Display</button>
             </div>
+            <div id="weeklyIncome"></div>
+
             <div>
                 <h3>Income for every month </h3>
-                <button type="button" id="display3" onclick="monthlytotal();">Display</button>
+                <button type="button" id="displayMonthlyIncome" onclick="monthlyIncome()">Display</button>
             </div>
-            <div id="mothly-produce"></div>
+            <div id="monthlyIncomeDisplay"></div>
             <div>
                 <h3>Income in a year </h3>
-                <button type="button" id="display3" onclick="yearlyProduce();">Display</button>
+                <button type="button" id="displayYearlyIncome" onclick="yearlyIncome() ">Display</button>
             </div>
-            <div id="yearly-produce"></div>
+            <div id="yearlyIncomeDisplay"></div>
         </div>
         <div>
             <footer>
